@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 int main(void){
-	pid_t zombie;
+	pid_t zombie; //variável pra receber o ID
 
 	zombie = fork();
 
