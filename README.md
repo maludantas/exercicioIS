@@ -12,12 +12,12 @@ int main(void){
 
 	zombie = fork();
 
-	if (zombie == 0){
+	if (zombie == 0){ //prioriza o filho
 		printf("%d", zombie);
 		exit(0);
 	}
 
-	else{
+	else{ //prioriza o pai
 		printf("%d", zombie);
 		sleep(10);
 	}
