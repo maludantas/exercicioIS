@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd>
+#include <unistd.h>
 #include <stdlib.h>
 
 int main(void){
@@ -8,11 +8,13 @@ int main(void){
 	zombie = fork();
 
 	if (zombie == 0){
-		exit(0)
+		printf("%d", zombie);
+		exit(0);
 	}
 
 	else{
-		sleep(10)
+		printf("%d", zombie);
+		sleep(10);
 	}
 	
 	return 0;
