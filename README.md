@@ -10,7 +10,7 @@
 int main(void){
 	pid_t zombie; //variável pra receber o ID
 
-	zombie = fork();
+	zombie = fork(); //cria o filho
 
 	if (zombie == 0){ //prioriza o filho
 		printf("%d", zombie);
